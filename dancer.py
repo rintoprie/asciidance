@@ -1,14 +1,3 @@
-# import itertools, sys, time
-
-# frames = ["(>^_^)>", "<(^_^<)", "^(^_^)^", "v(^_^)v"]
-# for f in itertools.cycle(frames):
-#     # Clear screen + move cursor to top-left (ANSI escape codes)
-#     sys.stdout.write("\033[2J\033[H")
-
-#     sys.stdout.write(f)
-#     sys.stdout.flush()
-#     time.sleep(0.15)
-
 import itertools
 import random
 import shutil
@@ -61,4 +50,5 @@ try:
 
 except KeyboardInterrupt:
     # reset formatting & move cursor nicely
+
     sys.stdout.write("\033[0m\n")
