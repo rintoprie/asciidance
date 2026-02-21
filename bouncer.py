@@ -81,4 +81,5 @@ except KeyboardInterrupt:
     pass
 finally:
     sys.stdout.write(show_cursor() + "\033[0m\n")
+
     sys.stdout.flush()
